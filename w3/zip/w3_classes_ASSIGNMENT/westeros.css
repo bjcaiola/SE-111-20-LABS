@@ -1,0 +1,319 @@
+/*FONT LOADS------------------------------------------ */
+
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+
+@font-face {
+    font-family:GoT;
+    src:url(fonts/GoT.ttf);
+}
+
+/*BACKGROUND------------------------------------------*/
+body {
+
+    margin:-10px;
+    background-color:grey;
+    background-image: url("images/floors.jpg");
+}
+
+#bg {
+
+    background-size:cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.655);
+    min-height:2200px;
+
+}
+
+#wrapper {
+
+    background-color:rgba(36, 35, 35, 0.85);
+    width:980px;
+    padding:25px;
+    margin:auto;
+    box-shadow:3px 3px 5px black;
+    border-radius:5px;
+    min-height:1000px;
+}
+
+/*BORDERS------------------------------------------------------------------*/
+
+
+.border-unity {
+
+    border:1px solid silver;
+    border-radius:5px;
+    margin-bottom:10px;
+
+
+}
+
+/*FONTS--------------------------------------------------------------------*/
+
+.got {
+
+    font-family:GoT;
+    text-align:center;
+}
+
+
+/*HEADER------------------------------------------------------------------*/
+#header {
+
+    background-image:url("images/sword3.png");
+    background-position:center top;
+    min-height:280px;
+    background-size:contain;
+    background-repeat:no-repeat;
+
+}
+
+#hello {
+
+    /*font-family:GoT;*/
+    font-size:58px;
+    text-align:center;
+    color:grey;
+    padding:20px;
+    /*border:1px solid silver;*/
+    text-shadow:2px 2px 2px black;
+    
+    line-height:200px;
+
+
+}
+
+/*NAVIGATION BAR----------------------------------------------------------*/
+.btn-container {
+
+    width:835px;
+    height:50px;
+    /*border:1px solid white;*/
+    margin:auto;
+    padding:5px;
+}
+
+.link-button {
+
+    width:200px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    text-decoration:none;
+    /*font-size:30px;*/
+    /*border:1px solid red;*/
+    display:block;
+    float:left;
+    margin-right:2px;
+    margin-left:2px;
+    background-color:rgb(73, 71, 71);
+    font-family: 'Montserrat', sans-serif;
+    box-shadow:3px 3px 5px black;
+
+}
+
+.link-button {
+
+    color:white;
+}
+
+.link-button:visited {
+
+    color:white;
+}
+
+.link-button:hover {
+
+    background-color:rgba(0,0,0, 0.85);
+    background-image:url(images/custom_coin.jpg);
+    font-size:30px;
+    color:white;
+    
+}
+
+
+/*MAIN CONTENT-----------------------------------------------------------------*/
+a {
+
+    color:white;
+    text-decoration:none;
+}
+
+a:hover {
+
+    color:rgb(20, 127, 167);
+}
+
+
+a:visited {
+
+    color:grey;
+}
+#main-content {
+
+    width:980px;
+    
+
+}
+
+.title {
+
+
+    text-align:center;
+    font-family:GoT;
+    font-size:30px;
+    color:rgb(153, 153, 153);
+
+   
+}
+
+.tab {
+
+    padding-left:30px;
+    padding-right:10px;
+    color:white;
+    font-size:16px;
+    font-family:Montserrat2, Helvetica, sans-serif;
+
+}
+
+
+/*CONTACT PAGE SPECIFIC--------------------------------------------------------*/
+
+.contact-pic {
+
+    width:300px;
+    border:5px solid black;
+    margin:10px;
+
+}
+
+.contact-div {
+
+
+    width:950px;
+    border:1px solid grey;
+    box-shadow:3px 3px 5px black;
+    margin:10px;
+    border-radius:5px;
+    float:left;
+}
+
+.contact-info {
+
+    float:right;
+    width:500px;
+    margin:auto;
+    margin-top:50px;
+    color:white;
+    text-align:center;
+
+}
+
+/*IMAGES-----------------------------------------------------------------------*/
+
+.main-pic {
+
+    width:600px;
+    margin-left:190px;
+    margin-top:10px;
+}
+
+
+
+
+/*FOOTER-----------------------------------------------------------------------*/
+
+#footer {
+
+    background-image:url(images/fire_200.jpg);
+    background-size:contain;
+    clear:both;
+}
+
+.cover {
+
+    background-color:black;
+    height:100%;
+    border:1px solid white;
+    z-index:5;
+    opacity:0.85;
+}
+.footer-text {
+
+    color:white;
+    font-size:10px;
+
+}
+
+
+.link {
+
+    color:white;
+    text-decoration:none; 
+}
+
+.link:hover {
+
+    color:red;
+}
+
+.link:visited {
+
+    color:grey;
+}
+
+.foot-img:hover {
+
+    box-shadow:1px 1px 2px black, 0 0 25px red, 0 0 5px rgb(133, 133, 139);
+    border-radius:40px;
+}
+
+.foot-img {
+
+    float:left;
+    margin-right:15px;
+    margin-left:30px;
+    width:75px;
+    
+    
+}
+
+#contact {
+
+    float:left;
+    margin-left:50px;
+    position:relative;
+    top:30px;
+}
+
+#social {
+
+    float:right;
+    width:500px;
+    height:100px;
+    position:relative;
+    top:30px;
+
+
+}
+
+#copy {
+
+    clear:both;
+    text-align:center;
+    padding-top:65px;
+}
+
+#footer {
+
+    clear:both;
+}
+
+
+
+
+
+/*SPECIAL! */
+#timeline {
+
+    color:grey;
+}
