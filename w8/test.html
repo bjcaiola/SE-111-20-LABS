@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 | Homework Assignment</title>
+</head>
+<body>
+
+    <h1>List Of People</h1>
+	<p>
+		Please fill in the form and click the submit button.
+	</p>
+	<div>
+		<form action="#">
+		<table>
+			<tr>
+				<td><label for="first">First Name</label></td>
+				<td><input id="first" type="text" name="first" placeholder="Ivan"></td>
+			</tr>
+			<tr>
+				<td><label for="last">Last Name</label></td>
+				<td><input id="last" type="text" name="last" placeholder="Drago"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit" id="submit" value="submit">Submit</button></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+	<div id="output">
+	<p></p>
+	</div>
+
+	<!--The script tag should go after the HMTL, but inside of the body.-->
+	<!--JavaScript cannot find tags, if they are not parsed before the script runs-->
+<script>
+    // Store the button in a variable
+    var submitBtn = document.querySelector("#submit");
+
+    // Array to store people
+    var people = [];
+
+    // Add click event listener
+    submitBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent form reload
+
+        // Get values at the time of click
+        var fname = document.getElementById("first").value;
+        var lname = document.getElementById("last").value;
+
+        // Optional: push to people array
+        people.push({ firstName: fname, lastName: lname });
+
+        // Display result
+        document.querySelector("#output p").textContent = `Hello, ${fname} ${lname}!`;
+
+        // Log to console
+        console.log('First Name:', fname);
+        console.log('Last Name:', lname);
+        console.log('People Array:', people);
+    });
+</script>
+</body>
+</html>

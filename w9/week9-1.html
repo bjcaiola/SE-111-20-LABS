@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+<style type="text/css">
+	.border{border:1px solid black;}
+</style>
+</head>
+
+<body>
+</body>
+
+<script type="text/javascript">
+	//Use this Array of objects to complete the assignment.
+
+	var bodyTag = document.querySelector("body") 
+	var people =[
+		{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+		{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+		{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+		{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+		{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+		{first:"Marion", last:"Cobretti", credit:"Cobra" }
+	]
+
+	for(let i = 0; i<people.length; i++){
+		let tempdiv = document.createElement()
+		tempdiv.setAttribute("id", String(i))
+		tempdiv.setAttribute("class", border)
+		
+		for(i in people){
+			var pTag = document.createElement("p")
+			var ptagNode = document.createTextNode(String(i))
+			pTag.appendChild(`ptagNode`) 
+			tempdiv.appendChild(`pTag`)
+	
+			
+		}
+		bodyTag.appendCHild(`tempdiv`)
+	}
+
+</script>
+
+
+<!-- Loop through the array of objects
+In each loop do the following:
+Declare a local variable called tempDiv;
+Create a new div using document.createElement() and store it in tempDiv.
+Apply an id to each div using the incrementor as the id (meaning that the first div will have id=0). To accomplish this you will use the setAttribute(Links to an external site.)Links to an external site. function. In other words, set the id of each div to the current number of the incrementor you are using in your for loop. You will need to turn the incrementor into a String in order for this to work, so simply put the incrementor inside of a String() function.
+
+Use a for/in loop within the for loop to add each property of the object into the div.
+In the for/in loop you will:
+Create a <p> element for each property in the object
+Create a textNode for each <p> and use the value of each property for the text.
+Append the text node to the p tag
+Append the <p> tag to the <div>
+Once the for/in loop has completed, append the tempDiv to the body tag before completing the standard for loop. -->
+</html>
